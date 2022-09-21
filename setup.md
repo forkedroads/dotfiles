@@ -1,5 +1,11 @@
 # Setting up the dev shell
 
+## Changing default shell
+Run this command to default to bash
+```
+chsh -s bin/bash
+```
+
 ## HomeBrew
 Install HomeBrew from https://brew.sh/ and update the ```bash_profile``` to include the follwoing line
 ```
