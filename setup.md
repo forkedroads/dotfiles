@@ -61,3 +61,16 @@ To set a specific version to be used, do the following (use the path from the pr
 export JAVA_HOME=<path from the previous step>
 ```
 where ```<path from the previous step>``` = ```/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home```  for setting up *1.8.333.02* from the previous step
+
+### Bash changes
+Change bashrc to include the following
+```
+export JAVA_8_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+export JAVA_8_AWS_HOME=/Users/xyz/Library/Java/JavaVirtualMachines/corretto-1.8.0_342/Contents/Home
+export JAVA_19_HOME=/Users/xyz/Library/Java/JavaVirtualMachines/openjdk-19/Contents/Home
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java19='export JAVA_HOME=$JAVA_19_HOME'
+
+# Default to Java 19
+java19
+```
