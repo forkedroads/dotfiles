@@ -35,3 +35,29 @@ $ git config --global mergetool.keepBackup false
 
 ### Git Prompt
 To have a more useful git prompt with the branch and other info, use this link and follow the steps : https://github.com/magicmonty/bash-git-prompt#installation
+
+
+## Java
+If using intellij, download SDKs using intellij. It is easier. https://www.jetbrains.com/help/idea/sdk.html#jdk-from-ide
+
+### Getting Java versions installed
+To find out all the versions that are available, run the following command
+```
+/usr/libexec/java_home -V
+```
+The output will look like this
+
+```
+Matching Java Virtual Machines (3):
+    19 (arm64) "Oracle Corporation" - "OpenJDK 19" /Users/xyz/Library/Java/JavaVirtualMachines/openjdk-19/Contents/Home
+    1.8.333.02 (x86_64) "Oracle Corporation" - "Java" /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+    1.8.0_342 (x86_64) "Amazon" - "Amazon Corretto 8" /Users/xyz/Library/Java/JavaVirtualMachines/corretto-1.8.0_342/Contents/Home
+/Users/xyz/Library/Java/JavaVirtualMachines/openjdk-19/Contents/Home
+```
+### Configuring a specific version to b e used
+To set a specific version to be used, do the following (use the path from the previous step)
+
+```
+export JAVA_HOME=<path from the previous step>
+```
+where ```<path from the previous step>``` = ```/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home```  for setting up *1.8.333.02* from the previous step
